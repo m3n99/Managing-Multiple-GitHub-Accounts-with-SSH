@@ -62,6 +62,8 @@ ssh-add --apple-use-keychain ~/.ssh/account1-github
 ssh-add --apple-use-keychain ~/.ssh/account2-github
 ```
 
+> `--apple-use-keychain` saves the keys to macOS Keychain so they persist across reboots. Without it, you will need to run `ssh-add` again every time you restart your machine.
+
 **Linux / Windows (Git Bash):**
 ```bash
 ssh-add ~/.ssh/account1-github
